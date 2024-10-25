@@ -1,0 +1,623 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+
+/*HEADER*/
+.buttons {
+    display: flex;
+    gap: 10px; 
+    padding-right: 120px;
+    padding-bottom: 30px;
+}
+
+.styled {
+    background-color: navy;
+    border:none;
+    border-radius: 3px;
+    width: 140px;
+    height: 35px;
+    cursor: pointer;
+    color: lightyellow;
+    font-size: 14px;
+}
+
+.styled:hover{
+    background-color: gray;
+}
+
+
+.future {
+    max-height: 150px;
+    max-width: 100px;
+    padding-left: 120px;
+    padding-bottom: 10px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 20px;
+    border: 1px;
+}
+
+
+/*BODY*/
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-image: url("uds.png");
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+html {
+    height: 100%;
+}
+
+
+/* laman homepage ko */
+#homescreen {
+    overflow: hidden;
+}
+
+body:not(#homescreen) {
+    overflow: auto;
+}
+
+header {
+    padding: 15px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    padding: 20px;
+    margin: 0 20px;
+}
+
+.homelaman {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: lightyellow;
+    text-align: left;
+    flex-basis: 50%;
+    padding-left: 170px;
+    padding-bottom: 70px;
+}
+
+.social img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px; 
+    cursor: pointer;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.photoone {
+    max-width:500px;
+    height: 450px;
+    padding: 10px;
+    padding-right: 200px;
+    padding-bottom: 100px;
+    flex-basis: 50%;
+    text-align: right;  
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-image: url("udds.png"); 
+    background-size: cover;
+    color: lightyellow; 
+}
+
+body.dark-mode .styled {
+    background-color: gray;
+    color: black;
+}
+
+body.dark-mode .homelaman {
+    color: lightyellow;
+}
+
+
+body.light-mode footer {
+    background-color: navy;  
+    color: lightyellow; 
+}
+
+/* Footer styles for Dark Mode */
+body.dark-mode footer {
+    background-color: gray;  
+    color: lightyellow; 
+}
+
+
+/*about me lamans*/
+.parent-container {
+    display: fixed;
+    justify-content: center;
+    align-items: center; 
+    padding-left: 500px;
+    padding-bottom: 80px;
+
+}
+
+.abtme {
+    width: 60%; 
+    margin-bottom: 40px;
+    background-color: lightyellow;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.abtme h2 {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.abtme ul {
+    list-style-type: none; 
+    padding-left: 0;
+}
+
+.abtme ul li {
+    color: #555555;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.abtme p {
+    color: #555555;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+body.light-mode .abtme {
+    background-color: lightyellow;
+    border: 2px solid black;
+}
+
+body.dark-mode .abtme {
+    background-color: #333; 
+    border: 2px solid gray; 
+    color: lightyellow; 
+}
+
+body.dark-mode .abtme h2 {
+    color: lightyellow; 
+    border-bottom: 2px solid gray; 
+}
+
+body.dark-mode .abtme ul li,
+body.dark-mode .abtme p {
+    color: lightyellow; 
+}
+
+
+
+/*Laman ba ng achiments*/
+.head {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: navy;
+}
+
+.basic {
+    display: grid; 
+    grid-template-columns: 100px 1fr; 
+    grid-template-rows: auto auto; 
+    gap: 10px; 
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: lightyellow;
+    color: navy;
+    align-items: center; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.school {
+    grid-row: 1 / span 2; 
+    width: 100px; 
+    height: auto;
+}
+.school:hover{
+    background-color: transparent;
+}
+
+.basic h2 {
+    margin: 0; 
+}
+
+.basic p {
+    margin: 0;
+    grid-column: 2;
+    grid-row: 2; 
+}
+
+.basic ul {
+    grid-column: 2; 
+    grid-row: 3; 
+}
+
+body.light-mode .head {
+    color: navy;
+}
+
+body.dark-mode .head {
+    color: lightyellow; 
+}
+
+body.light-mode .basic {
+    background-color: lightyellow;
+    border: 2px solid black;
+    color: navy;
+}
+
+body.dark-mode .basic {
+    background-color: #333; 
+    border: 2px solid gray; 
+    color: lightyellow; 
+}
+
+
+body.dark-mode .basic h2 {
+    color: lightyellow; 
+}
+
+body.dark-mode .basic p,
+body.dark-mode .basic ul 
+body.dark-mode .basic li{
+    color: lightyellow;
+}
+
+
+
+
+/*Project*/
+.project-body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+.project-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    padding: 20px;
+    padding-bottom: 450px;
+    font-family: 'Poppins', sans-serif;
+    color: navy;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    background-color: lightyellow;
+    border-radius: 15px;
+}
+
+.styled-project{
+    background-color: navy;
+    border:none;
+    width: 140px;
+    height: 35px;
+    cursor: pointer;
+    color: lightyellow;
+    font-size: 14px;
+}
+
+.buttons-project {
+    margin-left: auto;
+}
+
+.styled-project:hover{
+    background-color: gray;
+}
+
+.project{
+    display: inline-block;
+    padding: auto;
+    margin: 20px;
+    max-width: 200px;
+    height: 200px;
+}
+
+.project:hover{
+    background-color: gray;
+}
+
+body.light-mode .project {
+    background-color: lightyellow; 
+    color: navy; 
+}
+
+body.light-mode .project-container {
+    background-color: lightyellow; 
+    border: 2px solid black; 
+}
+
+body.light-mode .project-main h1 {
+    color: navy; 
+}
+
+/* Dark Mode */
+body.dark-mode .project {
+    background-color: #333; 
+    color: lightyellow; 
+}
+
+body.dark-mode .project-container {
+    background-color: #444; 
+    border: 2px solid gray; 
+}
+
+body.dark-mode .project-main h1 {
+    color: lightyellow; 
+}
+
+
+/* CONTACT */ 
+/*CONTACT*/
+.container-con{
+    display: flex;
+    background-color: lightyellow;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+}
+
+.image-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.form-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.form-section .form-group {
+    margin-bottom: 15px;
+}
+
+.form-section label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-section input, 
+.form-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    padding-right: 1px;
+}
+
+.form-section textarea {
+    resize: none;
+    height: 100px;
+}
+
+.form-section .submit-btn {
+    background-color:navy;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contact-info {
+    margin-top: 30px;
+}
+
+.contact-info p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-family: 'Poppins',sans-serif;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px; 
+    cursor: pointer;
+}
+
+/* Light Mode */
+body.light-mode .form-section {
+    color: navy; 
+}
+
+body.light-mode .form-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+body.light-mode .form-section .form-group {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+body.light-mode .form-section label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+body.light-mode .form-section input, 
+body.light-mode .form-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+body.light-mode .form-section textarea {
+    resize: none;
+    height: 100px;
+}
+
+body.light-mode .form-section .submit-btn {
+    background-color: navy;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+body.light-mode .contact-info {
+    margin-top: 30px;
+}
+
+body.light-mode .contact-info p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body.light-mode .social-media {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+body.light-mode .social-media img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px; 
+    cursor: pointer;
+}
+
+body.dark-mode .container-con {
+    background-color: #333; 
+    color: lightyellow; 
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .form-section h1 {
+    color: lightyellow; 
+}
+
+body.dark-mode .form-section label {
+    color: lightyellow; 
+}
+
+body.dark-mode .form-section input, 
+body.dark-mode .form-section textarea {
+    background-color: #444; 
+    color: lightyellow; 
+    border: 1px solid gray; 
+}
+
+body.dark-mode .form-section .submit-btn {
+    background-color: #444; 
+    padding: 10px;
+    color: lightyellow; 
+}
+
+body.dark-mode .contact-info p {
+    color: lightyellow; 
+}
+
+body.dark-mode .social-media img {
+    filter: brightness(0) invert(1); 
+}
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+footer {
+
+    padding: 1px;
+    text-align: center;
+    background-color: navy;
+    color: lightyellow;
+}
+
+
+
+/* Light Mode*/
+body.light-mode {
+    background-image: url("uds.png"); 
+    background-size: cover;
+    color: #333; 
+}
+
+body.light-mode .styled {
+    background-color: darkblue;
+    color: white;
+}
+
+body.light-mode .homelaman {
+    color: black;
+}
+
